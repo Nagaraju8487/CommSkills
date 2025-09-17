@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -23,7 +23,7 @@
   },
   "include": ["src"]
 }
-=======
+
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -48,4 +48,4 @@
   },
   "include": ["src"]
 }
->>>>>>> 9ba9e94e02e60f1d12d77b039442d66365d1798e
+
