@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MessageSquare, Play, Pause, RotateCcw, Mic, MicOff, Volume2 } from 'lucide-react';
-import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
+import  useSpeechRecognition  from '../hooks/useSpeechRecognition';
 import { useUserData } from '../hooks/useUserData';
 import { analyzeSpeech } from '../utils/speechAnalysis';
 
