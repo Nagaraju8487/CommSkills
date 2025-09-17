@@ -25,4 +25,14 @@ dist-ssr
 *.sw?
 .env
 
+# dependencies
+/node_modules
+
+# environment variables
+.env
+.env.local
+
+# build output
+/dist
+
 
