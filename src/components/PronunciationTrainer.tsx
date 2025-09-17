@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Mic, MicOff, Volume2, RotateCcw, CheckCircle, AlertCircle } from "lucide-react";
-import useSpeechRecognition from "../hooks/useSpeechRecognition";  // ✅ fixed
+import { useSpeechRecognition } from "../hooks/useSpeechRecognition";  // ✅ FIXED import
 import { useUserData } from "../hooks/useUserData";
 import { analyzeSpeech } from "../utils/speechAnalysis";
 
@@ -40,7 +40,7 @@ export function PronunciationTrainer() {
     stopListening,
     resetTranscript,
     isSupported,
-  } = useSpeechRecognition(); // ✅ works now
+  } = useSpeechRecognition();
 
   useEffect(() => {
     if (transcript && !isListening) {
@@ -141,8 +141,7 @@ export function PronunciationTrainer() {
       {!isSupported && (
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-8">
           <p className="text-yellow-800">
-            Speech recognition is not supported in your browser. Please use Chrome, Edge, or Safari for the best
-            experience.
+            Speech recognition is not supported in your browser. Please use Chrome, Edge, or Safari for the best experience.
           </p>
         </div>
       )}
